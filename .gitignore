@@ -1,0 +1,8 @@
+.vagrant/
+*.box
+tls/
+
+*.swp
+*.log
+*.bak
+.DS_Store
