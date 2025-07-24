@@ -21,6 +21,6 @@ This project provisions a **multi-node Kubernetes cluster** on local VMs using *
 
 ## Docs
 
-See [setup.md](docs/setup.md) for more details on architecture
-See [troubleshooting.md](docs/troubleshooting.md) for issues encountered along the way
-See [networking-flow.md](docs/networking-flow.md) for more details on networking
+- See [setup.md](docs/setup.md) for more details on architecture
+- See [troubleshooting.md](docs/troubleshooting.md) for issues encountered along the way
+- See [networking-flow.md](docs/networking-flow.md) for more details on networking
