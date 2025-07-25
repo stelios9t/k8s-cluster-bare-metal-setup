@@ -19,6 +19,8 @@ This project provisions a **multi-node Kubernetes cluster** on local VMs using *
 - Correct DNS and pod-to-pod networking across nodes
 - Basic connectivity tests
 
+![architecture](docs/assets/architecture-overview.png)
+
 ## Docs
 
 - See [setup.md](docs/setup.md) for more details on architecture
