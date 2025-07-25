@@ -91,3 +91,19 @@ spec:
 kubectl rollout restart daemonset calico-node -n kube-system
 kubectl rollout restart deployment calico-kube-controllers -n kube-system
 
+
+echo "Installing etcdutl and etcdctl"
+
+ETCD_VERSION=$(kubectl -n kube-system get pod -l component=etcd \
+  -o jsonpath="{.items[0].spec.containers[0].image}" | cut -d ':' -f2 | cut -d '-' -f1)
+
+curl -LO https://github.com/etcd-io/etcd/releases/download/v${ETCD_VERSION}/etcd-v${ETCD_VERSION}-linux-amd64.tar.gz
+tar -xzf etcd-v${ETCD_VERSION}-linux-amd64.tar.gz
+cd etcd-v${ETCD_VERSION}-linux-amd64
+
+sudo mv etcdutl /usr/local/bin/
+sudo mv etcdctl /usr/local/bin/
+cd ..
+rm -rf etcd-v${ETCD_VERSION}-linux-amd64*
+
+
