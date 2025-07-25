@@ -1,6 +1,6 @@
 # Deploying a Kubernetes Cluster on Bare Metal
 
-This project provisions a **multi-node Kubernetes cluster** on local VMs using **Vagrant + kubeadm** with networking configured via **Calico (VXLAN mode)**.
+This project provisions a **multi-node Kubernetes cluster** on local VMs using **Vagrant + kubeadm** with networking configured via **Calico (VXLAN mode)** and external service exposure handled by **MetalLB** (L2 mode) for end-to-end app access.
 
 ## Tech Stack
 
