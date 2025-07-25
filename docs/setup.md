@@ -26,6 +26,7 @@
 - Sets up kubeconfig for the current user
 - Manually sets the correct node IP to private network interface to avoid Vagrant’s default NAT IP issue
 - Deploys the Calico CNI plugin for pod networking
+- Calico CNI operates mostly at the Linux kernel level to program iptables, routing tables, and interfaces on each node.
 - Calico CNI creates a network overlay (virtual network) that connects all pods with unique IPs and handles pod-to-pod communication, routing and isolation
 - Configures Calico to use VXLAN mode (instead of IPIP) for better compatibility with VirtualBox
 
