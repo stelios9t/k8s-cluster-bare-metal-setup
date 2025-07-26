@@ -47,7 +47,7 @@ myapp.com -> 192.168.56.100
 ### Step 3
 
 - Ingress controller processes request and checks hostname and path (my.app-local)
-- It matches to an ingerss resource rule that points to the nginx service on default namespace
+- It matches to an ingress resource rule that points to the nginx service on default namespace
 
 ### Step 4
 
